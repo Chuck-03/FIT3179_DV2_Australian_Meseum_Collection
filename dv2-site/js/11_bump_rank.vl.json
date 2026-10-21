@@ -1,0 +1,191 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bump chart: each museum's rank by number of specimens collected per decade, 1900s to 2010s. Hover a line to highlight it.",
+  "width": 860,
+  "height": 280,
+  "data": {
+    "url": "data/decades.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "records": "number",
+        "decade": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.decade >= 1900 && datum.decade <= 2010"
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "records",
+          "order": "descending"
+        }
+      ],
+      "groupby": [
+        "decade"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "decade",
+      "type": "ordinal",
+      "title": "Decade collected",
+      "axis": {
+        "labelExpr": "datum.value + 's'",
+        "labelAngle": 0,
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "ordinal",
+      "title": "Rank",
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "offset": 52
+      }
+    },
+    "color": {
+      "field": "short",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "AM",
+          "MV",
+          "QM",
+          "WAM",
+          "SAM",
+          "TMAG",
+          "MAGNT",
+          "QVMAG"
+        ],
+        "range": [
+          "#2a78d6",
+          "#eb6834",
+          "#1baf7a",
+          "#eda100",
+          "#e87ba4",
+          "#008300",
+          "#6250d6",
+          "#e34948"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "hl",
+        "empty": true,
+        "value": 1
+      },
+      "value": 0.15
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 3,
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "detail": {
+          "field": "short"
+        }
+      },
+      "params": [
+        {
+          "name": "hl",
+          "select": {
+            "type": "point",
+            "fields": [
+              "short"
+            ],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 150,
+        "stroke": "#fffdf8",
+        "strokeWidth": 2,
+        "opacity": 1
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "decade",
+            "title": "Decade"
+          },
+          {
+            "field": "rank",
+            "title": "Rank"
+          },
+          {
+            "field": "records",
+            "title": "Records collected",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.decade == 2010"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontSize": 11,
+        "fontWeight": 700
+      },
+      "encoding": {
+        "text": {
+          "field": "short"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.decade == 1900"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -12,
+        "fontSize": 11,
+        "fontWeight": 700
+      },
+      "encoding": {
+        "text": {
+          "field": "short"
+        }
+      }
+    }
+  ]
+}

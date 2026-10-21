@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Dot plot: share of each museum's online specimen records that include at least one photograph.",
+  "width": 380,
+  "height": 260,
+  "data": {
+    "url": "data/museums.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "lat": "number",
+        "lon": "number",
+        "founded": "number",
+        "collection_size": "number",
+        "ala_records": "number",
+        "pct_digitised": "number",
+        "type_specimens": "number",
+        "holotypes": "number",
+        "other_types": "number",
+        "records_with_images": "number",
+        "pct_with_images": "number",
+        "home_records": "number",
+        "away_records": "number",
+        "located_records": "number",
+        "pct_home": "number",
+        "pct_away": "number",
+        "undated_records": "number"
+      }
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "short",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "pct_with_images",
+        "order": "descending"
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontWeight": 600,
+        "labelPadding": 8,
+        "grid": true,
+        "gridDash": [
+          2,
+          3
+        ]
+      }
+    },
+    "x": {
+      "field": "pct_with_images",
+      "type": "quantitative",
+      "title": "% of online records with a photo",
+      "scale": {
+        "domain": [
+          0,
+          20
+        ]
+      },
+      "axis": {
+        "values": [
+          0,
+          5,
+          10,
+          15,
+          20
+        ],
+        "labelExpr": "datum.value + '%'"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "museum",
+        "title": "Museum"
+      },
+      {
+        "field": "records_with_images",
+        "title": "Records with photos",
+        "format": ","
+      },
+      {
+        "field": "ala_records",
+        "title": "All online records",
+        "format": ","
+      },
+      {
+        "field": "pct_with_images",
+        "title": "Share (%)",
+        "format": ".2f"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 150,
+        "opacity": 1,
+        "stroke": "#fffdf8",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "short",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "AM",
+              "MV",
+              "QM",
+              "WAM",
+              "SAM",
+              "TMAG",
+              "MAGNT",
+              "QVMAG"
+            ],
+            "range": [
+              "#2a78d6",
+              "#eb6834",
+              "#1baf7a",
+              "#eda100",
+              "#e87ba4",
+              "#008300",
+              "#6250d6",
+              "#e34948"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 11,
+        "fontSize": 11,
+        "color": "#57534a"
+      },
+      "encoding": {
+        "text": {
+          "field": "pct_with_images",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,701 @@
+short,museum,cell,col,row,status,pct
+AM,Australian Museum,0,0,0,Digitised,8.6
+AM,Australian Museum,1,1,0,Digitised,8.6
+AM,Australian Museum,2,2,0,Digitised,8.6
+AM,Australian Museum,3,3,0,Digitised,8.6
+AM,Australian Museum,4,4,0,Digitised,8.6
+AM,Australian Museum,5,5,0,Digitised,8.6
+AM,Australian Museum,6,6,0,Digitised,8.6
+AM,Australian Museum,7,7,0,Digitised,8.6
+AM,Australian Museum,8,8,0,Digitised,8.6
+AM,Australian Museum,9,9,0,Not yet online,8.6
+AM,Australian Museum,10,0,1,Not yet online,8.6
+AM,Australian Museum,11,1,1,Not yet online,8.6
+AM,Australian Museum,12,2,1,Not yet online,8.6
+AM,Australian Museum,13,3,1,Not yet online,8.6
+AM,Australian Museum,14,4,1,Not yet online,8.6
+AM,Australian Museum,15,5,1,Not yet online,8.6
+AM,Australian Museum,16,6,1,Not yet online,8.6
+AM,Australian Museum,17,7,1,Not yet online,8.6
+AM,Australian Museum,18,8,1,Not yet online,8.6
+AM,Australian Museum,19,9,1,Not yet online,8.6
+AM,Australian Museum,20,0,2,Not yet online,8.6
+AM,Australian Museum,21,1,2,Not yet online,8.6
+AM,Australian Museum,22,2,2,Not yet online,8.6
+AM,Australian Museum,23,3,2,Not yet online,8.6
+AM,Australian Museum,24,4,2,Not yet online,8.6
+AM,Australian Museum,25,5,2,Not yet online,8.6
+AM,Australian Museum,26,6,2,Not yet online,8.6
+AM,Australian Museum,27,7,2,Not yet online,8.6
+AM,Australian Museum,28,8,2,Not yet online,8.6
+AM,Australian Museum,29,9,2,Not yet online,8.6
+AM,Australian Museum,30,0,3,Not yet online,8.6
+AM,Australian Museum,31,1,3,Not yet online,8.6
+AM,Australian Museum,32,2,3,Not yet online,8.6
+AM,Australian Museum,33,3,3,Not yet online,8.6
+AM,Australian Museum,34,4,3,Not yet online,8.6
+AM,Australian Museum,35,5,3,Not yet online,8.6
+AM,Australian Museum,36,6,3,Not yet online,8.6
+AM,Australian Museum,37,7,3,Not yet online,8.6
+AM,Australian Museum,38,8,3,Not yet online,8.6
+AM,Australian Museum,39,9,3,Not yet online,8.6
+AM,Australian Museum,40,0,4,Not yet online,8.6
+AM,Australian Museum,41,1,4,Not yet online,8.6
+AM,Australian Museum,42,2,4,Not yet online,8.6
+AM,Australian Museum,43,3,4,Not yet online,8.6
+AM,Australian Museum,44,4,4,Not yet online,8.6
+AM,Australian Museum,45,5,4,Not yet online,8.6
+AM,Australian Museum,46,6,4,Not yet online,8.6
+AM,Australian Museum,47,7,4,Not yet online,8.6
+AM,Australian Museum,48,8,4,Not yet online,8.6
+AM,Australian Museum,49,9,4,Not yet online,8.6
+AM,Australian Museum,50,0,5,Not yet online,8.6
+AM,Australian Museum,51,1,5,Not yet online,8.6
+AM,Australian Museum,52,2,5,Not yet online,8.6
+AM,Australian Museum,53,3,5,Not yet online,8.6
+AM,Australian Museum,54,4,5,Not yet online,8.6
+AM,Australian Museum,55,5,5,Not yet online,8.6
+AM,Australian Museum,56,6,5,Not yet online,8.6
+AM,Australian Museum,57,7,5,Not yet online,8.6
+AM,Australian Museum,58,8,5,Not yet online,8.6
+AM,Australian Museum,59,9,5,Not yet online,8.6
+AM,Australian Museum,60,0,6,Not yet online,8.6
+AM,Australian Museum,61,1,6,Not yet online,8.6
+AM,Australian Museum,62,2,6,Not yet online,8.6
+AM,Australian Museum,63,3,6,Not yet online,8.6
+AM,Australian Museum,64,4,6,Not yet online,8.6
+AM,Australian Museum,65,5,6,Not yet online,8.6
+AM,Australian Museum,66,6,6,Not yet online,8.6
+AM,Australian Museum,67,7,6,Not yet online,8.6
+AM,Australian Museum,68,8,6,Not yet online,8.6
+AM,Australian Museum,69,9,6,Not yet online,8.6
+AM,Australian Museum,70,0,7,Not yet online,8.6
+AM,Australian Museum,71,1,7,Not yet online,8.6
+AM,Australian Museum,72,2,7,Not yet online,8.6
+AM,Australian Museum,73,3,7,Not yet online,8.6
+AM,Australian Museum,74,4,7,Not yet online,8.6
+AM,Australian Museum,75,5,7,Not yet online,8.6
+AM,Australian Museum,76,6,7,Not yet online,8.6
+AM,Australian Museum,77,7,7,Not yet online,8.6
+AM,Australian Museum,78,8,7,Not yet online,8.6
+AM,Australian Museum,79,9,7,Not yet online,8.6
+AM,Australian Museum,80,0,8,Not yet online,8.6
+AM,Australian Museum,81,1,8,Not yet online,8.6
+AM,Australian Museum,82,2,8,Not yet online,8.6
+AM,Australian Museum,83,3,8,Not yet online,8.6
+AM,Australian Museum,84,4,8,Not yet online,8.6
+AM,Australian Museum,85,5,8,Not yet online,8.6
+AM,Australian Museum,86,6,8,Not yet online,8.6
+AM,Australian Museum,87,7,8,Not yet online,8.6
+AM,Australian Museum,88,8,8,Not yet online,8.6
+AM,Australian Museum,89,9,8,Not yet online,8.6
+AM,Australian Museum,90,0,9,Not yet online,8.6
+AM,Australian Museum,91,1,9,Not yet online,8.6
+AM,Australian Museum,92,2,9,Not yet online,8.6
+AM,Australian Museum,93,3,9,Not yet online,8.6
+AM,Australian Museum,94,4,9,Not yet online,8.6
+AM,Australian Museum,95,5,9,Not yet online,8.6
+AM,Australian Museum,96,6,9,Not yet online,8.6
+AM,Australian Museum,97,7,9,Not yet online,8.6
+AM,Australian Museum,98,8,9,Not yet online,8.6
+AM,Australian Museum,99,9,9,Not yet online,8.6
+MV,Museums Victoria,0,0,0,Digitised,7.2
+MV,Museums Victoria,1,1,0,Digitised,7.2
+MV,Museums Victoria,2,2,0,Digitised,7.2
+MV,Museums Victoria,3,3,0,Digitised,7.2
+MV,Museums Victoria,4,4,0,Digitised,7.2
+MV,Museums Victoria,5,5,0,Digitised,7.2
+MV,Museums Victoria,6,6,0,Digitised,7.2
+MV,Museums Victoria,7,7,0,Not yet online,7.2
+MV,Museums Victoria,8,8,0,Not yet online,7.2
+MV,Museums Victoria,9,9,0,Not yet online,7.2
+MV,Museums Victoria,10,0,1,Not yet online,7.2
+MV,Museums Victoria,11,1,1,Not yet online,7.2
+MV,Museums Victoria,12,2,1,Not yet online,7.2
+MV,Museums Victoria,13,3,1,Not yet online,7.2
+MV,Museums Victoria,14,4,1,Not yet online,7.2
+MV,Museums Victoria,15,5,1,Not yet online,7.2
+MV,Museums Victoria,16,6,1,Not yet online,7.2
+MV,Museums Victoria,17,7,1,Not yet online,7.2
+MV,Museums Victoria,18,8,1,Not yet online,7.2
+MV,Museums Victoria,19,9,1,Not yet online,7.2
+MV,Museums Victoria,20,0,2,Not yet online,7.2
+MV,Museums Victoria,21,1,2,Not yet online,7.2
+MV,Museums Victoria,22,2,2,Not yet online,7.2
+MV,Museums Victoria,23,3,2,Not yet online,7.2
+MV,Museums Victoria,24,4,2,Not yet online,7.2
+MV,Museums Victoria,25,5,2,Not yet online,7.2
+MV,Museums Victoria,26,6,2,Not yet online,7.2
+MV,Museums Victoria,27,7,2,Not yet online,7.2
+MV,Museums Victoria,28,8,2,Not yet online,7.2
+MV,Museums Victoria,29,9,2,Not yet online,7.2
+MV,Museums Victoria,30,0,3,Not yet online,7.2
+MV,Museums Victoria,31,1,3,Not yet online,7.2
+MV,Museums Victoria,32,2,3,Not yet online,7.2
+MV,Museums Victoria,33,3,3,Not yet online,7.2
+MV,Museums Victoria,34,4,3,Not yet online,7.2
+MV,Museums Victoria,35,5,3,Not yet online,7.2
+MV,Museums Victoria,36,6,3,Not yet online,7.2
+MV,Museums Victoria,37,7,3,Not yet online,7.2
+MV,Museums Victoria,38,8,3,Not yet online,7.2
+MV,Museums Victoria,39,9,3,Not yet online,7.2
+MV,Museums Victoria,40,0,4,Not yet online,7.2
+MV,Museums Victoria,41,1,4,Not yet online,7.2
+MV,Museums Victoria,42,2,4,Not yet online,7.2
+MV,Museums Victoria,43,3,4,Not yet online,7.2
+MV,Museums Victoria,44,4,4,Not yet online,7.2
+MV,Museums Victoria,45,5,4,Not yet online,7.2
+MV,Museums Victoria,46,6,4,Not yet online,7.2
+MV,Museums Victoria,47,7,4,Not yet online,7.2
+MV,Museums Victoria,48,8,4,Not yet online,7.2
+MV,Museums Victoria,49,9,4,Not yet online,7.2
+MV,Museums Victoria,50,0,5,Not yet online,7.2
+MV,Museums Victoria,51,1,5,Not yet online,7.2
+MV,Museums Victoria,52,2,5,Not yet online,7.2
+MV,Museums Victoria,53,3,5,Not yet online,7.2
+MV,Museums Victoria,54,4,5,Not yet online,7.2
+MV,Museums Victoria,55,5,5,Not yet online,7.2
+MV,Museums Victoria,56,6,5,Not yet online,7.2
+MV,Museums Victoria,57,7,5,Not yet online,7.2
+MV,Museums Victoria,58,8,5,Not yet online,7.2
+MV,Museums Victoria,59,9,5,Not yet online,7.2
+MV,Museums Victoria,60,0,6,Not yet online,7.2
+MV,Museums Victoria,61,1,6,Not yet online,7.2
+MV,Museums Victoria,62,2,6,Not yet online,7.2
+MV,Museums Victoria,63,3,6,Not yet online,7.2
+MV,Museums Victoria,64,4,6,Not yet online,7.2
+MV,Museums Victoria,65,5,6,Not yet online,7.2
+MV,Museums Victoria,66,6,6,Not yet online,7.2
+MV,Museums Victoria,67,7,6,Not yet online,7.2
+MV,Museums Victoria,68,8,6,Not yet online,7.2
+MV,Museums Victoria,69,9,6,Not yet online,7.2
+MV,Museums Victoria,70,0,7,Not yet online,7.2
+MV,Museums Victoria,71,1,7,Not yet online,7.2
+MV,Museums Victoria,72,2,7,Not yet online,7.2
+MV,Museums Victoria,73,3,7,Not yet online,7.2
+MV,Museums Victoria,74,4,7,Not yet online,7.2
+MV,Museums Victoria,75,5,7,Not yet online,7.2
+MV,Museums Victoria,76,6,7,Not yet online,7.2
+MV,Museums Victoria,77,7,7,Not yet online,7.2
+MV,Museums Victoria,78,8,7,Not yet online,7.2
+MV,Museums Victoria,79,9,7,Not yet online,7.2
+MV,Museums Victoria,80,0,8,Not yet online,7.2
+MV,Museums Victoria,81,1,8,Not yet online,7.2
+MV,Museums Victoria,82,2,8,Not yet online,7.2
+MV,Museums Victoria,83,3,8,Not yet online,7.2
+MV,Museums Victoria,84,4,8,Not yet online,7.2
+MV,Museums Victoria,85,5,8,Not yet online,7.2
+MV,Museums Victoria,86,6,8,Not yet online,7.2
+MV,Museums Victoria,87,7,8,Not yet online,7.2
+MV,Museums Victoria,88,8,8,Not yet online,7.2
+MV,Museums Victoria,89,9,8,Not yet online,7.2
+MV,Museums Victoria,90,0,9,Not yet online,7.2
+MV,Museums Victoria,91,1,9,Not yet online,7.2
+MV,Museums Victoria,92,2,9,Not yet online,7.2
+MV,Museums Victoria,93,3,9,Not yet online,7.2
+MV,Museums Victoria,94,4,9,Not yet online,7.2
+MV,Museums Victoria,95,5,9,Not yet online,7.2
+MV,Museums Victoria,96,6,9,Not yet online,7.2
+MV,Museums Victoria,97,7,9,Not yet online,7.2
+MV,Museums Victoria,98,8,9,Not yet online,7.2
+MV,Museums Victoria,99,9,9,Not yet online,7.2
+QM,Queensland Museum,0,0,0,Digitised,6.0
+QM,Queensland Museum,1,1,0,Digitised,6.0
+QM,Queensland Museum,2,2,0,Digitised,6.0
+QM,Queensland Museum,3,3,0,Digitised,6.0
+QM,Queensland Museum,4,4,0,Digitised,6.0
+QM,Queensland Museum,5,5,0,Digitised,6.0
+QM,Queensland Museum,6,6,0,Not yet online,6.0
+QM,Queensland Museum,7,7,0,Not yet online,6.0
+QM,Queensland Museum,8,8,0,Not yet online,6.0
+QM,Queensland Museum,9,9,0,Not yet online,6.0
+QM,Queensland Museum,10,0,1,Not yet online,6.0
+QM,Queensland Museum,11,1,1,Not yet online,6.0
+QM,Queensland Museum,12,2,1,Not yet online,6.0
+QM,Queensland Museum,13,3,1,Not yet online,6.0
+QM,Queensland Museum,14,4,1,Not yet online,6.0
+QM,Queensland Museum,15,5,1,Not yet online,6.0
+QM,Queensland Museum,16,6,1,Not yet online,6.0
+QM,Queensland Museum,17,7,1,Not yet online,6.0
+QM,Queensland Museum,18,8,1,Not yet online,6.0
+QM,Queensland Museum,19,9,1,Not yet online,6.0
+QM,Queensland Museum,20,0,2,Not yet online,6.0
+QM,Queensland Museum,21,1,2,Not yet online,6.0
+QM,Queensland Museum,22,2,2,Not yet online,6.0
+QM,Queensland Museum,23,3,2,Not yet online,6.0
+QM,Queensland Museum,24,4,2,Not yet online,6.0
+QM,Queensland Museum,25,5,2,Not yet online,6.0
+QM,Queensland Museum,26,6,2,Not yet online,6.0
+QM,Queensland Museum,27,7,2,Not yet online,6.0
+QM,Queensland Museum,28,8,2,Not yet online,6.0
+QM,Queensland Museum,29,9,2,Not yet online,6.0
+QM,Queensland Museum,30,0,3,Not yet online,6.0
+QM,Queensland Museum,31,1,3,Not yet online,6.0
+QM,Queensland Museum,32,2,3,Not yet online,6.0
+QM,Queensland Museum,33,3,3,Not yet online,6.0
+QM,Queensland Museum,34,4,3,Not yet online,6.0
+QM,Queensland Museum,35,5,3,Not yet online,6.0
+QM,Queensland Museum,36,6,3,Not yet online,6.0
+QM,Queensland Museum,37,7,3,Not yet online,6.0
+QM,Queensland Museum,38,8,3,Not yet online,6.0
+QM,Queensland Museum,39,9,3,Not yet online,6.0
+QM,Queensland Museum,40,0,4,Not yet online,6.0
+QM,Queensland Museum,41,1,4,Not yet online,6.0
+QM,Queensland Museum,42,2,4,Not yet online,6.0
+QM,Queensland Museum,43,3,4,Not yet online,6.0
+QM,Queensland Museum,44,4,4,Not yet online,6.0
+QM,Queensland Museum,45,5,4,Not yet online,6.0
+QM,Queensland Museum,46,6,4,Not yet online,6.0
+QM,Queensland Museum,47,7,4,Not yet online,6.0
+QM,Queensland Museum,48,8,4,Not yet online,6.0
+QM,Queensland Museum,49,9,4,Not yet online,6.0
+QM,Queensland Museum,50,0,5,Not yet online,6.0
+QM,Queensland Museum,51,1,5,Not yet online,6.0
+QM,Queensland Museum,52,2,5,Not yet online,6.0
+QM,Queensland Museum,53,3,5,Not yet online,6.0
+QM,Queensland Museum,54,4,5,Not yet online,6.0
+QM,Queensland Museum,55,5,5,Not yet online,6.0
+QM,Queensland Museum,56,6,5,Not yet online,6.0
+QM,Queensland Museum,57,7,5,Not yet online,6.0
+QM,Queensland Museum,58,8,5,Not yet online,6.0
+QM,Queensland Museum,59,9,5,Not yet online,6.0
+QM,Queensland Museum,60,0,6,Not yet online,6.0
+QM,Queensland Museum,61,1,6,Not yet online,6.0
+QM,Queensland Museum,62,2,6,Not yet online,6.0
+QM,Queensland Museum,63,3,6,Not yet online,6.0
+QM,Queensland Museum,64,4,6,Not yet online,6.0
+QM,Queensland Museum,65,5,6,Not yet online,6.0
+QM,Queensland Museum,66,6,6,Not yet online,6.0
+QM,Queensland Museum,67,7,6,Not yet online,6.0
+QM,Queensland Museum,68,8,6,Not yet online,6.0
+QM,Queensland Museum,69,9,6,Not yet online,6.0
+QM,Queensland Museum,70,0,7,Not yet online,6.0
+QM,Queensland Museum,71,1,7,Not yet online,6.0
+QM,Queensland Museum,72,2,7,Not yet online,6.0
+QM,Queensland Museum,73,3,7,Not yet online,6.0
+QM,Queensland Museum,74,4,7,Not yet online,6.0
+QM,Queensland Museum,75,5,7,Not yet online,6.0
+QM,Queensland Museum,76,6,7,Not yet online,6.0
+QM,Queensland Museum,77,7,7,Not yet online,6.0
+QM,Queensland Museum,78,8,7,Not yet online,6.0
+QM,Queensland Museum,79,9,7,Not yet online,6.0
+QM,Queensland Museum,80,0,8,Not yet online,6.0
+QM,Queensland Museum,81,1,8,Not yet online,6.0
+QM,Queensland Museum,82,2,8,Not yet online,6.0
+QM,Queensland Museum,83,3,8,Not yet online,6.0
+QM,Queensland Museum,84,4,8,Not yet online,6.0
+QM,Queensland Museum,85,5,8,Not yet online,6.0
+QM,Queensland Museum,86,6,8,Not yet online,6.0
+QM,Queensland Museum,87,7,8,Not yet online,6.0
+QM,Queensland Museum,88,8,8,Not yet online,6.0
+QM,Queensland Museum,89,9,8,Not yet online,6.0
+QM,Queensland Museum,90,0,9,Not yet online,6.0
+QM,Queensland Museum,91,1,9,Not yet online,6.0
+QM,Queensland Museum,92,2,9,Not yet online,6.0
+QM,Queensland Museum,93,3,9,Not yet online,6.0
+QM,Queensland Museum,94,4,9,Not yet online,6.0
+QM,Queensland Museum,95,5,9,Not yet online,6.0
+QM,Queensland Museum,96,6,9,Not yet online,6.0
+QM,Queensland Museum,97,7,9,Not yet online,6.0
+QM,Queensland Museum,98,8,9,Not yet online,6.0
+QM,Queensland Museum,99,9,9,Not yet online,6.0
+WAM,Western Australian Museum,0,0,0,Digitised,15.4
+WAM,Western Australian Museum,1,1,0,Digitised,15.4
+WAM,Western Australian Museum,2,2,0,Digitised,15.4
+WAM,Western Australian Museum,3,3,0,Digitised,15.4
+WAM,Western Australian Museum,4,4,0,Digitised,15.4
+WAM,Western Australian Museum,5,5,0,Digitised,15.4
+WAM,Western Australian Museum,6,6,0,Digitised,15.4
+WAM,Western Australian Museum,7,7,0,Digitised,15.4
+WAM,Western Australian Museum,8,8,0,Digitised,15.4
+WAM,Western Australian Museum,9,9,0,Digitised,15.4
+WAM,Western Australian Museum,10,0,1,Digitised,15.4
+WAM,Western Australian Museum,11,1,1,Digitised,15.4
+WAM,Western Australian Museum,12,2,1,Digitised,15.4
+WAM,Western Australian Museum,13,3,1,Digitised,15.4
+WAM,Western Australian Museum,14,4,1,Digitised,15.4
+WAM,Western Australian Museum,15,5,1,Not yet online,15.4
+WAM,Western Australian Museum,16,6,1,Not yet online,15.4
+WAM,Western Australian Museum,17,7,1,Not yet online,15.4
+WAM,Western Australian Museum,18,8,1,Not yet online,15.4
+WAM,Western Australian Museum,19,9,1,Not yet online,15.4
+WAM,Western Australian Museum,20,0,2,Not yet online,15.4
+WAM,Western Australian Museum,21,1,2,Not yet online,15.4
+WAM,Western Australian Museum,22,2,2,Not yet online,15.4
+WAM,Western Australian Museum,23,3,2,Not yet online,15.4
+WAM,Western Australian Museum,24,4,2,Not yet online,15.4
+WAM,Western Australian Museum,25,5,2,Not yet online,15.4
+WAM,Western Australian Museum,26,6,2,Not yet online,15.4
+WAM,Western Australian Museum,27,7,2,Not yet online,15.4
+WAM,Western Australian Museum,28,8,2,Not yet online,15.4
+WAM,Western Australian Museum,29,9,2,Not yet online,15.4
+WAM,Western Australian Museum,30,0,3,Not yet online,15.4
+WAM,Western Australian Museum,31,1,3,Not yet online,15.4
+WAM,Western Australian Museum,32,2,3,Not yet online,15.4
+WAM,Western Australian Museum,33,3,3,Not yet online,15.4
+WAM,Western Australian Museum,34,4,3,Not yet online,15.4
+WAM,Western Australian Museum,35,5,3,Not yet online,15.4
+WAM,Western Australian Museum,36,6,3,Not yet online,15.4
+WAM,Western Australian Museum,37,7,3,Not yet online,15.4
+WAM,Western Australian Museum,38,8,3,Not yet online,15.4
+WAM,Western Australian Museum,39,9,3,Not yet online,15.4
+WAM,Western Australian Museum,40,0,4,Not yet online,15.4
+WAM,Western Australian Museum,41,1,4,Not yet online,15.4
+WAM,Western Australian Museum,42,2,4,Not yet online,15.4
+WAM,Western Australian Museum,43,3,4,Not yet online,15.4
+WAM,Western Australian Museum,44,4,4,Not yet online,15.4
+WAM,Western Australian Museum,45,5,4,Not yet online,15.4
+WAM,Western Australian Museum,46,6,4,Not yet online,15.4
+WAM,Western Australian Museum,47,7,4,Not yet online,15.4
+WAM,Western Australian Museum,48,8,4,Not yet online,15.4
+WAM,Western Australian Museum,49,9,4,Not yet online,15.4
+WAM,Western Australian Museum,50,0,5,Not yet online,15.4
+WAM,Western Australian Museum,51,1,5,Not yet online,15.4
+WAM,Western Australian Museum,52,2,5,Not yet online,15.4
+WAM,Western Australian Museum,53,3,5,Not yet online,15.4
+WAM,Western Australian Museum,54,4,5,Not yet online,15.4
+WAM,Western Australian Museum,55,5,5,Not yet online,15.4
+WAM,Western Australian Museum,56,6,5,Not yet online,15.4
+WAM,Western Australian Museum,57,7,5,Not yet online,15.4
+WAM,Western Australian Museum,58,8,5,Not yet online,15.4
+WAM,Western Australian Museum,59,9,5,Not yet online,15.4
+WAM,Western Australian Museum,60,0,6,Not yet online,15.4
+WAM,Western Australian Museum,61,1,6,Not yet online,15.4
+WAM,Western Australian Museum,62,2,6,Not yet online,15.4
+WAM,Western Australian Museum,63,3,6,Not yet online,15.4
+WAM,Western Australian Museum,64,4,6,Not yet online,15.4
+WAM,Western Australian Museum,65,5,6,Not yet online,15.4
+WAM,Western Australian Museum,66,6,6,Not yet online,15.4
+WAM,Western Australian Museum,67,7,6,Not yet online,15.4
+WAM,Western Australian Museum,68,8,6,Not yet online,15.4
+WAM,Western Australian Museum,69,9,6,Not yet online,15.4
+WAM,Western Australian Museum,70,0,7,Not yet online,15.4
+WAM,Western Australian Museum,71,1,7,Not yet online,15.4
+WAM,Western Australian Museum,72,2,7,Not yet online,15.4
+WAM,Western Australian Museum,73,3,7,Not yet online,15.4
+WAM,Western Australian Museum,74,4,7,Not yet online,15.4
+WAM,Western Australian Museum,75,5,7,Not yet online,15.4
+WAM,Western Australian Museum,76,6,7,Not yet online,15.4
+WAM,Western Australian Museum,77,7,7,Not yet online,15.4
+WAM,Western Australian Museum,78,8,7,Not yet online,15.4
+WAM,Western Australian Museum,79,9,7,Not yet online,15.4
+WAM,Western Australian Museum,80,0,8,Not yet online,15.4
+WAM,Western Australian Museum,81,1,8,Not yet online,15.4
+WAM,Western Australian Museum,82,2,8,Not yet online,15.4
+WAM,Western Australian Museum,83,3,8,Not yet online,15.4
+WAM,Western Australian Museum,84,4,8,Not yet online,15.4
+WAM,Western Australian Museum,85,5,8,Not yet online,15.4
+WAM,Western Australian Museum,86,6,8,Not yet online,15.4
+WAM,Western Australian Museum,87,7,8,Not yet online,15.4
+WAM,Western Australian Museum,88,8,8,Not yet online,15.4
+WAM,Western Australian Museum,89,9,8,Not yet online,15.4
+WAM,Western Australian Museum,90,0,9,Not yet online,15.4
+WAM,Western Australian Museum,91,1,9,Not yet online,15.4
+WAM,Western Australian Museum,92,2,9,Not yet online,15.4
+WAM,Western Australian Museum,93,3,9,Not yet online,15.4
+WAM,Western Australian Museum,94,4,9,Not yet online,15.4
+WAM,Western Australian Museum,95,5,9,Not yet online,15.4
+WAM,Western Australian Museum,96,6,9,Not yet online,15.4
+WAM,Western Australian Museum,97,7,9,Not yet online,15.4
+WAM,Western Australian Museum,98,8,9,Not yet online,15.4
+WAM,Western Australian Museum,99,9,9,Not yet online,15.4
+SAM,South Australian Museum,0,0,0,Digitised,11.5
+SAM,South Australian Museum,1,1,0,Digitised,11.5
+SAM,South Australian Museum,2,2,0,Digitised,11.5
+SAM,South Australian Museum,3,3,0,Digitised,11.5
+SAM,South Australian Museum,4,4,0,Digitised,11.5
+SAM,South Australian Museum,5,5,0,Digitised,11.5
+SAM,South Australian Museum,6,6,0,Digitised,11.5
+SAM,South Australian Museum,7,7,0,Digitised,11.5
+SAM,South Australian Museum,8,8,0,Digitised,11.5
+SAM,South Australian Museum,9,9,0,Digitised,11.5
+SAM,South Australian Museum,10,0,1,Digitised,11.5
+SAM,South Australian Museum,11,1,1,Digitised,11.5
+SAM,South Australian Museum,12,2,1,Not yet online,11.5
+SAM,South Australian Museum,13,3,1,Not yet online,11.5
+SAM,South Australian Museum,14,4,1,Not yet online,11.5
+SAM,South Australian Museum,15,5,1,Not yet online,11.5
+SAM,South Australian Museum,16,6,1,Not yet online,11.5
+SAM,South Australian Museum,17,7,1,Not yet online,11.5
+SAM,South Australian Museum,18,8,1,Not yet online,11.5
+SAM,South Australian Museum,19,9,1,Not yet online,11.5
+SAM,South Australian Museum,20,0,2,Not yet online,11.5
+SAM,South Australian Museum,21,1,2,Not yet online,11.5
+SAM,South Australian Museum,22,2,2,Not yet online,11.5
+SAM,South Australian Museum,23,3,2,Not yet online,11.5
+SAM,South Australian Museum,24,4,2,Not yet online,11.5
+SAM,South Australian Museum,25,5,2,Not yet online,11.5
+SAM,South Australian Museum,26,6,2,Not yet online,11.5
+SAM,South Australian Museum,27,7,2,Not yet online,11.5
+SAM,South Australian Museum,28,8,2,Not yet online,11.5
+SAM,South Australian Museum,29,9,2,Not yet online,11.5
+SAM,South Australian Museum,30,0,3,Not yet online,11.5
+SAM,South Australian Museum,31,1,3,Not yet online,11.5
+SAM,South Australian Museum,32,2,3,Not yet online,11.5
+SAM,South Australian Museum,33,3,3,Not yet online,11.5
+SAM,South Australian Museum,34,4,3,Not yet online,11.5
+SAM,South Australian Museum,35,5,3,Not yet online,11.5
+SAM,South Australian Museum,36,6,3,Not yet online,11.5
+SAM,South Australian Museum,37,7,3,Not yet online,11.5
+SAM,South Australian Museum,38,8,3,Not yet online,11.5
+SAM,South Australian Museum,39,9,3,Not yet online,11.5
+SAM,South Australian Museum,40,0,4,Not yet online,11.5
+SAM,South Australian Museum,41,1,4,Not yet online,11.5
+SAM,South Australian Museum,42,2,4,Not yet online,11.5
+SAM,South Australian Museum,43,3,4,Not yet online,11.5
+SAM,South Australian Museum,44,4,4,Not yet online,11.5
+SAM,South Australian Museum,45,5,4,Not yet online,11.5
+SAM,South Australian Museum,46,6,4,Not yet online,11.5
+SAM,South Australian Museum,47,7,4,Not yet online,11.5
+SAM,South Australian Museum,48,8,4,Not yet online,11.5
+SAM,South Australian Museum,49,9,4,Not yet online,11.5
+SAM,South Australian Museum,50,0,5,Not yet online,11.5
+SAM,South Australian Museum,51,1,5,Not yet online,11.5
+SAM,South Australian Museum,52,2,5,Not yet online,11.5
+SAM,South Australian Museum,53,3,5,Not yet online,11.5
+SAM,South Australian Museum,54,4,5,Not yet online,11.5
+SAM,South Australian Museum,55,5,5,Not yet online,11.5
+SAM,South Australian Museum,56,6,5,Not yet online,11.5
+SAM,South Australian Museum,57,7,5,Not yet online,11.5
+SAM,South Australian Museum,58,8,5,Not yet online,11.5
+SAM,South Australian Museum,59,9,5,Not yet online,11.5
+SAM,South Australian Museum,60,0,6,Not yet online,11.5
+SAM,South Australian Museum,61,1,6,Not yet online,11.5
+SAM,South Australian Museum,62,2,6,Not yet online,11.5
+SAM,South Australian Museum,63,3,6,Not yet online,11.5
+SAM,South Australian Museum,64,4,6,Not yet online,11.5
+SAM,South Australian Museum,65,5,6,Not yet online,11.5
+SAM,South Australian Museum,66,6,6,Not yet online,11.5
+SAM,South Australian Museum,67,7,6,Not yet online,11.5
+SAM,South Australian Museum,68,8,6,Not yet online,11.5
+SAM,South Australian Museum,69,9,6,Not yet online,11.5
+SAM,South Australian Museum,70,0,7,Not yet online,11.5
+SAM,South Australian Museum,71,1,7,Not yet online,11.5
+SAM,South Australian Museum,72,2,7,Not yet online,11.5
+SAM,South Australian Museum,73,3,7,Not yet online,11.5
+SAM,South Australian Museum,74,4,7,Not yet online,11.5
+SAM,South Australian Museum,75,5,7,Not yet online,11.5
+SAM,South Australian Museum,76,6,7,Not yet online,11.5
+SAM,South Australian Museum,77,7,7,Not yet online,11.5
+SAM,South Australian Museum,78,8,7,Not yet online,11.5
+SAM,South Australian Museum,79,9,7,Not yet online,11.5
+SAM,South Australian Museum,80,0,8,Not yet online,11.5
+SAM,South Australian Museum,81,1,8,Not yet online,11.5
+SAM,South Australian Museum,82,2,8,Not yet online,11.5
+SAM,South Australian Museum,83,3,8,Not yet online,11.5
+SAM,South Australian Museum,84,4,8,Not yet online,11.5
+SAM,South Australian Museum,85,5,8,Not yet online,11.5
+SAM,South Australian Museum,86,6,8,Not yet online,11.5
+SAM,South Australian Museum,87,7,8,Not yet online,11.5
+SAM,South Australian Museum,88,8,8,Not yet online,11.5
+SAM,South Australian Museum,89,9,8,Not yet online,11.5
+SAM,South Australian Museum,90,0,9,Not yet online,11.5
+SAM,South Australian Museum,91,1,9,Not yet online,11.5
+SAM,South Australian Museum,92,2,9,Not yet online,11.5
+SAM,South Australian Museum,93,3,9,Not yet online,11.5
+SAM,South Australian Museum,94,4,9,Not yet online,11.5
+SAM,South Australian Museum,95,5,9,Not yet online,11.5
+SAM,South Australian Museum,96,6,9,Not yet online,11.5
+SAM,South Australian Museum,97,7,9,Not yet online,11.5
+SAM,South Australian Museum,98,8,9,Not yet online,11.5
+SAM,South Australian Museum,99,9,9,Not yet online,11.5
+TMAG,Tasmanian Museum and Art Gallery,0,0,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,1,1,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,2,2,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,3,3,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,4,4,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,5,5,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,6,6,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,7,7,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,8,8,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,9,9,0,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,10,0,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,11,1,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,12,2,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,13,3,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,14,4,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,15,5,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,16,6,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,17,7,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,18,8,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,19,9,1,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,20,0,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,21,1,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,22,2,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,23,3,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,24,4,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,25,5,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,26,6,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,27,7,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,28,8,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,29,9,2,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,30,0,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,31,1,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,32,2,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,33,3,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,34,4,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,35,5,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,36,6,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,37,7,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,38,8,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,39,9,3,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,40,0,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,41,1,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,42,2,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,43,3,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,44,4,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,45,5,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,46,6,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,47,7,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,48,8,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,49,9,4,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,50,0,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,51,1,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,52,2,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,53,3,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,54,4,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,55,5,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,56,6,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,57,7,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,58,8,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,59,9,5,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,60,0,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,61,1,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,62,2,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,63,3,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,64,4,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,65,5,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,66,6,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,67,7,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,68,8,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,69,9,6,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,70,0,7,Digitised,71.0
+TMAG,Tasmanian Museum and Art Gallery,71,1,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,72,2,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,73,3,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,74,4,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,75,5,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,76,6,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,77,7,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,78,8,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,79,9,7,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,80,0,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,81,1,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,82,2,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,83,3,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,84,4,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,85,5,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,86,6,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,87,7,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,88,8,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,89,9,8,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,90,0,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,91,1,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,92,2,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,93,3,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,94,4,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,95,5,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,96,6,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,97,7,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,98,8,9,Not yet online,71.0
+TMAG,Tasmanian Museum and Art Gallery,99,9,9,Not yet online,71.0
+QVMAG,Queen Victoria Museum and Art Gallery,0,0,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,1,1,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,2,2,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,3,3,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,4,4,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,5,5,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,6,6,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,7,7,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,8,8,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,9,9,0,Digitised,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,10,0,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,11,1,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,12,2,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,13,3,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,14,4,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,15,5,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,16,6,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,17,7,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,18,8,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,19,9,1,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,20,0,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,21,1,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,22,2,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,23,3,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,24,4,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,25,5,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,26,6,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,27,7,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,28,8,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,29,9,2,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,30,0,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,31,1,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,32,2,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,33,3,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,34,4,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,35,5,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,36,6,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,37,7,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,38,8,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,39,9,3,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,40,0,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,41,1,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,42,2,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,43,3,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,44,4,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,45,5,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,46,6,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,47,7,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,48,8,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,49,9,4,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,50,0,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,51,1,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,52,2,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,53,3,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,54,4,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,55,5,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,56,6,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,57,7,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,58,8,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,59,9,5,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,60,0,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,61,1,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,62,2,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,63,3,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,64,4,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,65,5,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,66,6,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,67,7,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,68,8,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,69,9,6,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,70,0,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,71,1,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,72,2,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,73,3,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,74,4,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,75,5,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,76,6,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,77,7,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,78,8,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,79,9,7,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,80,0,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,81,1,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,82,2,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,83,3,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,84,4,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,85,5,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,86,6,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,87,7,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,88,8,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,89,9,8,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,90,0,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,91,1,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,92,2,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,93,3,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,94,4,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,95,5,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,96,6,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,97,7,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,98,8,9,Not yet online,10.1
+QVMAG,Queen Victoria Museum and Art Gallery,99,9,9,Not yet online,10.1

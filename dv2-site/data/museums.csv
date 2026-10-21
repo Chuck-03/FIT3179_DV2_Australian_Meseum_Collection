@@ -1,0 +1,9 @@
+museum,short,state,city,lat,lon,founded,collection_size,size_label,size_source,ala_records,pct_digitised,type_specimens,holotypes,other_types,records_with_images,pct_with_images,home_records,away_records,located_records,pct_home,pct_away,undated_records
+Australian Museum,AM,New South Wales,Sydney,-33.874,151.213,1827,22000000,22+ million,australian.museum/learn/collections,1896468,8.6,59949,11175,48774,300739,15.86,787546,687560,1475106,53.4,46.6,558023
+Museums Victoria,MV,Victoria,Melbourne,-37.803,144.972,1854,15000000,≈15 million,Museums Victoria Annual Report 2023–24,1074417,7.2,37748,6371,31377,62567,5.82,532364,476647,1009011,52.8,47.2,212622
+Queensland Museum,QM,Queensland,Brisbane,-27.472,153.019,1862,15200000,15.2+ million,Queensland Museum Annual Report 2023–24,913594,6.0,63144,9754,53390,10345,1.13,646172,104601,750773,86.1,13.9,206361
+Western Australian Museum,WAM,Western Australia,Perth,-31.949,115.861,1891,4400000,4.4+ million,museum.wa.gov.au/collections,676114,15.4,28316,4101,24215,0,0.0,517833,63162,580995,89.1,10.9,337270
+South Australian Museum,SAM,South Australia,Adelaide,-34.921,138.602,1856,5000000,5+ million,samuseum.sa.gov.au/collections,573941,11.5,23935,5819,18116,3567,0.62,304911,215121,520032,58.6,41.4,259893
+Tasmanian Museum and Art Gallery,TMAG,Tasmania,Hobart,-42.881,147.333,1843,800000,"≈800,000",CAMD member profile,567975,71.0,2729,835,1894,48,0.01,470991,67704,538695,87.4,12.6,31068
+Museum and Art Gallery of the Northern Territory,MAGNT,Northern Territory,Darwin,-12.438,130.834,1981,,not published,"MAGNT Annual Report 2021–22 (281,367 natural-science lots only)",250375,,5357,967,4390,0,0.0,150388,64402,214790,70.0,30.0,8188
+Queen Victoria Museum and Art Gallery,QVMAG,Tasmania,Launceston,-41.433,147.137,1891,1500000,1.5+ million,"The Examiner, 2024",152048,10.1,1968,466,1502,22656,14.9,134602,13015,147617,91.2,8.8,9868

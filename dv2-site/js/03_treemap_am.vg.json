@@ -1,0 +1,390 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Treemap (Vega): what the Australian Museum's departments hold, by number of items.",
+  "width": 760,
+  "height": 380,
+  "padding": {
+    "top": 34,
+    "left": 4,
+    "right": 250,
+    "bottom": 4
+  },
+  "autosize": "none",
+  "signals": [
+    {
+      "name": "hover",
+      "value": null,
+      "on": [
+        {
+          "events": "rect:mouseover",
+          "update": "datum.id"
+        },
+        {
+          "events": "rect:mouseout",
+          "update": "null"
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "name": "tree",
+      "url": "data/am_departments.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "items": "number"
+        }
+      },
+      "transform": [
+        {
+          "type": "stratify",
+          "key": "id",
+          "parentKey": "parent"
+        },
+        {
+          "type": "treemap",
+          "field": "items",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "round": true,
+          "method": "squarify",
+          "ratio": 1.4,
+          "paddingInner": 3,
+          "paddingOuter": 0,
+          "paddingTop": 0,
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.items > 0"
+        },
+        {
+          "type": "formula",
+          "as": "w",
+          "expr": "datum.x1 - datum.x0"
+        },
+        {
+          "type": "formula",
+          "as": "h",
+          "expr": "datum.y1 - datum.y0"
+        },
+        {
+          "type": "formula",
+          "as": "label",
+          "expr": "datum.w > 70 && datum.h > 34 ? datum.id : ''"
+        },
+        {
+          "type": "formula",
+          "as": "valueLabel",
+          "expr": "datum.w > 70 && datum.h > 34 ? format(datum.items, '.3~s') + ' items' : ''"
+        }
+      ]
+    },
+    {
+      "name": "cultural",
+      "source": "leaves",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.area == 'Cultural collections'"
+        },
+        {
+          "type": "window",
+          "ops": [
+            "row_number"
+          ],
+          "as": [
+            "rank"
+          ],
+          "sort": {
+            "field": "items",
+            "order": "descending"
+          }
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "Natural sciences",
+        "Cultural collections"
+      ],
+      "range": [
+        "#2a78d6",
+        "#c2612c"
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "orient": "none",
+      "legendX": 0,
+      "legendY": -30,
+      "direction": "horizontal",
+      "symbolType": "square",
+      "labelFontSize": 12
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "enter": {
+          "x": {
+            "field": "x0"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "area"
+          },
+          "cornerRadius": {
+            "value": 3
+          },
+          "tooltip": {
+            "signal": "{'Department': datum.id, 'Collection area': datum.area, 'Items (approx.)': format(datum.items, ',')}"
+          }
+        },
+        "update": {
+          "fillOpacity": [
+            {
+              "test": "hover && hover != datum.id",
+              "value": 0.55
+            },
+            {
+              "value": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "datum.x0 + 8"
+          },
+          "y": {
+            "signal": "datum.y0 + 18"
+          },
+          "text": {
+            "field": "label"
+          },
+          "fill": {
+            "value": "#ffffff"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fontWeight": {
+            "value": 600
+          },
+          "limit": {
+            "signal": "datum.w - 12"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "datum.x0 + 8"
+          },
+          "y": {
+            "signal": "datum.y0 + 34"
+          },
+          "text": {
+            "field": "valueLabel"
+          },
+          "fill": {
+            "value": "#ffffff"
+          },
+          "fillOpacity": {
+            "value": 0.85
+          },
+          "fontSize": {
+            "value": 11
+          },
+          "limit": {
+            "signal": "datum.w - 12"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "width + 22"
+          },
+          "y": {
+            "value": 8
+          },
+          "text": {
+            "value": "Cultural collections (brown)"
+          },
+          "fill": {
+            "value": "#c2612c"
+          },
+          "fontSize": {
+            "value": 13
+          },
+          "fontWeight": {
+            "value": 700
+          }
+        }
+      }
+    },
+    {
+      "type": "rule",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "width + 10"
+          },
+          "x2": {
+            "signal": "width + 10"
+          },
+          "y": {
+            "value": 0
+          },
+          "y2": {
+            "signal": "height"
+          },
+          "stroke": {
+            "value": "#ddd5c3"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "cultural"
+      },
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "width + 22"
+          },
+          "y": {
+            "signal": "18 + datum.rank * 42"
+          },
+          "text": {
+            "field": "id"
+          },
+          "fill": {
+            "value": "#1d1b16"
+          },
+          "fontSize": {
+            "value": 12.5
+          },
+          "fontWeight": {
+            "value": 600
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "cultural"
+      },
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "width + 22"
+          },
+          "y": {
+            "signal": "34 + datum.rank * 42"
+          },
+          "text": {
+            "signal": "format(datum.items, ',') + ' items'"
+          },
+          "fill": {
+            "value": "#57534a"
+          },
+          "fontSize": {
+            "value": 11.5
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {
+            "signal": "width + 22"
+          },
+          "y": {
+            "signal": "height - 40"
+          },
+          "text": {
+            "value": [
+              "Natural sciences ≈ 12.4 million items",
+              "Cultural collections ≈ 905,000 items"
+            ]
+          },
+          "fill": {
+            "value": "#57534a"
+          },
+          "fontSize": {
+            "value": 11.5
+          },
+          "lineHeight": {
+            "value": 16
+          }
+        }
+      }
+    }
+  ]
+}

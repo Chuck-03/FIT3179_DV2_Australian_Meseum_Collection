@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Butterfly chart: share of each museum's located records collected in its home state (left) versus everywhere else (right).",
+  "width": 400,
+  "height": 290,
+  "data": {
+    "url": "data/museums.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "lat": "number",
+        "lon": "number",
+        "founded": "number",
+        "collection_size": "number",
+        "ala_records": "number",
+        "pct_digitised": "number",
+        "type_specimens": "number",
+        "holotypes": "number",
+        "other_types": "number",
+        "records_with_images": "number",
+        "pct_with_images": "number",
+        "home_records": "number",
+        "away_records": "number",
+        "located_records": "number",
+        "pct_home": "number",
+        "pct_away": "number",
+        "undated_records": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "pct_home",
+        "pct_away"
+      ],
+      "as": [
+        "side",
+        "pct"
+      ]
+    },
+    {
+      "calculate": "datum.side == 'pct_home' ? -datum.pct : datum.pct",
+      "as": "x"
+    },
+    {
+      "calculate": "datum.side == 'pct_home' ? 'Home state' : 'Elsewhere (other states & overseas)'",
+      "as": "Where"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "short",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "QVMAG",
+        "WAM",
+        "TMAG",
+        "QM",
+        "MAGNT",
+        "SAM",
+        "AM",
+        "MV"
+      ],
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontWeight": 600,
+        "labelPadding": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 20,
+        "cornerRadius": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "title": "← home state   |   % of records with a known place   |   elsewhere →",
+          "scale": {
+            "domain": [
+              -100,
+              100
+            ]
+          },
+          "axis": {
+            "values": [
+              -100,
+              -50,
+              0,
+              50,
+              100
+            ],
+            "labelExpr": "abs(datum.value) + '%'",
+            "grid": true
+          }
+        },
+        "color": {
+          "field": "Where",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Home state",
+              "Elsewhere (other states & overseas)"
+            ],
+            "range": [
+              "#1c5cab",
+              "#c9b98f"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "labelLimit": 400
+          }
+        },
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "state",
+            "title": "Home state"
+          },
+          {
+            "field": "Where",
+            "title": "Collected"
+          },
+          {
+            "field": "pct",
+            "title": "Share (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.side == 'pct_home'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "fontSize": 10.5,
+        "color": "#ffffff",
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "pct",
+          "type": "quantitative",
+          "format": ".0f"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.side == 'pct_away'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "fontSize": 10.5,
+        "color": "#57534a"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "pct",
+          "type": "quantitative",
+          "format": ".0f"
+        }
+      }
+    }
+  ]
+}

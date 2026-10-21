@@ -1,0 +1,167 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Lollipop chart: total objects and specimens held by each museum, with founding year.",
+  "width": 860,
+  "height": 260,
+  "data": {
+    "url": "data/museums.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "lat": "number",
+        "lon": "number",
+        "founded": "number",
+        "collection_size": "number",
+        "ala_records": "number",
+        "pct_digitised": "number",
+        "type_specimens": "number",
+        "holotypes": "number",
+        "other_types": "number",
+        "records_with_images": "number",
+        "pct_with_images": "number",
+        "home_records": "number",
+        "away_records": "number",
+        "located_records": "number",
+        "pct_home": "number",
+        "pct_away": "number",
+        "undated_records": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.collection_size > 0"
+    },
+    {
+      "calculate": "datum.collection_size / 1000000",
+      "as": "millions"
+    },
+    {
+      "calculate": "datum.size_label + '  ·  est. ' + datum.founded",
+      "as": "label"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "short",
+      "type": "nominal",
+      "sort": {
+        "field": "collection_size",
+        "order": "descending"
+      },
+      "title": null,
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontWeight": 600,
+        "labelPadding": 8
+      }
+    },
+    "x": {
+      "field": "millions",
+      "type": "quantitative",
+      "title": "Objects and specimens held (millions)",
+      "scale": {
+        "domain": [
+          0,
+          30
+        ]
+      },
+      "axis": {
+        "values": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25
+        ],
+        "grid": true
+      }
+    },
+    "tooltip": [
+      {
+        "field": "museum",
+        "title": "Museum"
+      },
+      {
+        "field": "size_label",
+        "title": "Collection"
+      },
+      {
+        "field": "founded",
+        "title": "Founded"
+      },
+      {
+        "field": "size_source",
+        "title": "Source"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2,
+        "color": "#b9b2a1"
+      },
+      "encoding": {
+        "x2": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 160,
+        "opacity": 1,
+        "stroke": "#fffdf8",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "short",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "AM",
+              "MV",
+              "QM",
+              "WAM",
+              "SAM",
+              "TMAG",
+              "MAGNT",
+              "QVMAG"
+            ],
+            "range": [
+              "#2a78d6",
+              "#eb6834",
+              "#1baf7a",
+              "#eda100",
+              "#e87ba4",
+              "#008300",
+              "#6250d6",
+              "#e34948"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontSize": 11,
+        "color": "#57534a"
+      },
+      "encoding": {
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Waffle charts (small multiples): online specimen records for every 100 objects a museum holds.",
+  "data": {
+    "url": "data/waffle.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "cell": "number",
+        "col": "number",
+        "row": "number",
+        "pct": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.short + ' · ' + datum.pct + ' per 100'",
+      "as": "panel"
+    }
+  ],
+  "facet": {
+    "field": "panel",
+    "type": "nominal",
+    "title": null,
+    "sort": {
+      "field": "pct",
+      "op": "max",
+      "order": "descending"
+    },
+    "header": {
+      "labelFontSize": 12,
+      "labelFontWeight": 700,
+      "labelColor": "#1d1b16",
+      "labelPadding": 4
+    }
+  },
+  "columns": 7,
+  "spacing": {
+    "column": 14,
+    "row": 10
+  },
+  "spec": {
+    "width": 104,
+    "height": 104,
+    "mark": {
+      "type": "square",
+      "size": 72,
+      "cornerRadius": 1
+    },
+    "encoding": {
+      "x": {
+        "field": "col",
+        "type": "ordinal",
+        "axis": null
+      },
+      "y": {
+        "field": "row",
+        "type": "ordinal",
+        "axis": null,
+        "sort": "descending"
+      },
+      "color": {
+        "field": "status",
+        "type": "nominal",
+        "title": null,
+        "scale": {
+          "domain": [
+            "Digitised",
+            "Not yet online"
+          ],
+          "range": [
+            "#1c5cab",
+            "#e3ddcc"
+          ]
+        },
+        "legend": {
+          "orient": "bottom",
+          "direction": "horizontal",
+          "labelExpr": "datum.label == 'Digitised' ? 'Specimen record online (ALA)' : 'Not yet online / not a specimen'",
+          "labelLimit": 400
+        }
+      },
+      "tooltip": [
+        {
+          "field": "museum",
+          "title": "Museum"
+        },
+        {
+          "field": "pct",
+          "title": "Online records per 100 items"
+        }
+      ]
+    }
+  }
+}

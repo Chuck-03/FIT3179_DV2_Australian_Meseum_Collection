@@ -1,0 +1,182 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap: share of each museum's online specimen records that belong to each group of life.",
+  "width": 820,
+  "height": 300,
+  "data": {
+    "url": "data/groups.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "records": "number",
+        "share": "number"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "group",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Insects",
+        "Spiders & other arthropods",
+        "Crustaceans",
+        "Molluscs",
+        "Other invertebrates",
+        "Fish",
+        "Amphibians",
+        "Reptiles",
+        "Birds",
+        "Mammals",
+        "Plants, fungi & other"
+      ],
+      "axis": {
+        "orient": "bottom",
+        "labelAngle": 0,
+        "labelLimit": 110,
+        "labelFontSize": 11,
+        "domain": false,
+        "ticks": false,
+        "labelExpr": "datum.value == 'Spiders & other arthropods' ? ['Spiders,', 'centipedes', 'etc.'] : datum.value == 'Other invertebrates' ? ['Other', 'invertebrates'] : datum.value == 'Plants, fungi & other' ? ['Plants,', 'fungi etc.'] : datum.value"
+      }
+    },
+    "y": {
+      "field": "short",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "AM",
+        "MV",
+        "QM",
+        "WAM",
+        "SAM",
+        "TMAG",
+        "MAGNT",
+        "QVMAG"
+      ],
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontWeight": 600,
+        "labelPadding": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 3,
+        "stroke": "#fffdf8",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "band",
+          "type": "ordinal",
+          "title": "Share of museum's records",
+          "scale": {
+            "domain": [
+              "under 2%",
+              "2–5%",
+              "5–10%",
+              "10–20%",
+              "20–35%",
+              "35% +"
+            ],
+            "range": [
+              "#f1ede3",
+              "#cde2fb",
+              "#9ec5f4",
+              "#5598e7",
+              "#256abf",
+              "#0d366b"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "symbolType": "square",
+            "symbolSize": 170,
+            "title": "Share of museum's records",
+            "titleLimit": 400,
+            "direction": "horizontal"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "pick",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.45
+        },
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "group",
+            "title": "Group"
+          },
+          {
+            "field": "records",
+            "title": "Records",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "title": "Share of museum's records (%)",
+            "format": ".1f"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "pick",
+          "select": {
+            "type": "point",
+            "fields": [
+              "group"
+            ],
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 600
+      },
+      "transform": [
+        {
+          "filter": "datum.share >= 10"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "share",
+          "type": "quantitative",
+          "format": ".0f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.share >= 20",
+            "value": "#ffffff"
+          },
+          "value": "#1d1b16"
+        }
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.share < 2 ? 'under 2%' : datum.share < 5 ? '2–5%' : datum.share < 10 ? '5–10%' : datum.share < 20 ? '10–20%' : datum.share < 35 ? '20–35%' : '35% +'",
+      "as": "band"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gridded density map: number of specimen records collected in each 1° × 1° cell (all eight museums combined).",
+  "width": 430,
+  "height": 360,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#efe9da",
+        "stroke": null
+      }
+    },
+    {
+      "data": {
+        "url": "data/grid.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.records",
+          "as": "records"
+        },
+        {
+          "calculate": "datum.properties.lat",
+          "as": "lat"
+        },
+        {
+          "calculate": "datum.properties.lon",
+          "as": "lon"
+        },
+        {
+          "calculate": "datum.records < 100 ? 'under 100' : datum.records < 1000 ? '100–1k' : datum.records < 5000 ? '1k–5k' : datum.records < 20000 ? '5k–20k' : datum.records < 100000 ? '20k–100k' : '100k +'",
+          "as": "band"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#fffdf8",
+        "strokeWidth": 0.3
+      },
+      "encoding": {
+        "color": {
+          "field": "band",
+          "type": "ordinal",
+          "title": "Records per 1° square",
+          "scale": {
+            "domain": [
+              "under 100",
+              "100–1k",
+              "1k–5k",
+              "5k–20k",
+              "20k–100k",
+              "100k +"
+            ],
+            "range": [
+              "#fde7cf",
+              "#f9c08f",
+              "#f0904f",
+              "#d95926",
+              "#a63c12",
+              "#5e1f06"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "symbolType": "square",
+            "symbolSize": 170,
+            "title": "Records per 1° square",
+            "titleLimit": 400,
+            "direction": "horizontal",
+            "columns": 3
+          }
+        },
+        "tooltip": [
+          {
+            "field": "lat",
+            "title": "Latitude (°)"
+          },
+          {
+            "field": "lon",
+            "title": "Longitude (°)"
+          },
+          {
+            "field": "records",
+            "title": "Specimen records",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#2e2b24",
+        "strokeWidth": 0.9,
+        "strokeOpacity": 0.85
+      }
+    }
+  ]
+}

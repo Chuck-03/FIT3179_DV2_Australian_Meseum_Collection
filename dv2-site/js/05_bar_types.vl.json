@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked bar chart: type specimens (the reference specimens that define a species name) held by each museum.",
+  "width": 380,
+  "height": 260,
+  "data": {
+    "url": "data/museums.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "lat": "number",
+        "lon": "number",
+        "founded": "number",
+        "collection_size": "number",
+        "ala_records": "number",
+        "pct_digitised": "number",
+        "type_specimens": "number",
+        "holotypes": "number",
+        "other_types": "number",
+        "records_with_images": "number",
+        "pct_with_images": "number",
+        "home_records": "number",
+        "away_records": "number",
+        "located_records": "number",
+        "pct_home": "number",
+        "pct_away": "number",
+        "undated_records": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "holotypes",
+        "other_types"
+      ],
+      "as": [
+        "kind",
+        "count"
+      ]
+    },
+    {
+      "calculate": "datum.kind == 'holotypes' ? 'Holotypes (the single name-bearer)' : 'Other type specimens'",
+      "as": "Kind"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "short",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "QM",
+        "AM",
+        "MV",
+        "WAM",
+        "SAM",
+        "MAGNT",
+        "TMAG",
+        "QVMAG"
+      ],
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontWeight": 600,
+        "labelPadding": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 18,
+        "stroke": "#fffdf8",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": true,
+          "title": "Type specimens with online records",
+          "axis": {
+            "format": "~s",
+            "grid": true
+          }
+        },
+        "color": {
+          "field": "Kind",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Holotypes (the single name-bearer)",
+              "Other type specimens"
+            ],
+            "range": [
+              "#7a3b12",
+              "#e2b48a"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "vertical",
+            "labelLimit": 400
+          }
+        },
+        "order": {
+          "field": "kind",
+          "sort": "ascending"
+        },
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "Kind",
+            "title": "Kind"
+          },
+          {
+            "field": "count",
+            "title": "Specimens",
+            "format": ","
+          },
+          {
+            "field": "type_specimens",
+            "title": "All type specimens",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.kind == 'holotypes'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "fontSize": 11,
+        "color": "#57534a"
+      },
+      "encoding": {
+        "x": {
+          "field": "type_specimens",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "type_specimens",
+          "type": "quantitative",
+          "format": ","
+        }
+      }
+    }
+  ]
+}

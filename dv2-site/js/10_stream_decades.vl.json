@@ -1,0 +1,185 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Streamgraph: specimen records by the decade they were collected, 1850s to 2020s. Click the legend to isolate a museum.",
+  "width": 900,
+  "height": 320,
+  "data": {
+    "url": "data/decades.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "records": "number",
+        "decade": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "stroke": "#fffdf8",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "quantitative",
+          "title": "Decade collected",
+          "scale": {
+            "domain": [
+              1850,
+              2020
+            ],
+            "nice": false
+          },
+          "axis": {
+            "format": "d",
+            "values": [
+              1850,
+              1870,
+              1890,
+              1910,
+              1930,
+              1950,
+              1970,
+              1990,
+              2010
+            ],
+            "labelExpr": "datum.value + 's'",
+            "grid": false
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "records",
+          "type": "quantitative",
+          "stack": "center",
+          "axis": null
+        },
+        "color": {
+          "field": "short",
+          "type": "nominal",
+          "title": "Museum",
+          "sort": [
+            "AM",
+            "MV",
+            "QM",
+            "WAM",
+            "SAM",
+            "TMAG",
+            "MAGNT",
+            "QVMAG"
+          ],
+          "scale": {
+            "domain": [
+              "AM",
+              "MV",
+              "QM",
+              "WAM",
+              "SAM",
+              "TMAG",
+              "MAGNT",
+              "QVMAG"
+            ],
+            "range": [
+              "#2a78d6",
+              "#eb6834",
+              "#1baf7a",
+              "#eda100",
+              "#e87ba4",
+              "#008300",
+              "#6250d6",
+              "#e34948"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "symbolType": "square"
+          }
+        },
+        "order": {
+          "field": "short",
+          "sort": "ascending"
+        },
+        "opacity": {
+          "condition": {
+            "param": "mus",
+            "value": 0.95
+          },
+          "value": 0.12
+        },
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "decade",
+            "title": "Decade",
+            "format": "d"
+          },
+          {
+            "field": "records",
+            "aggregate": "sum",
+            "title": "Records",
+            "format": ","
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "mus",
+          "select": {
+            "type": "point",
+            "fields": [
+              "short"
+            ]
+          },
+          "bind": "legend"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "decade": 1905,
+            "y": 510000,
+            "note": "1900s: steady, modest collecting"
+          },
+          {
+            "decade": 1972,
+            "y": 880000,
+            "note": "1970s–90s boom: 2.3 million records in 30 years"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#57534a",
+        "align": "center"
+      },
+      "encoding": {
+        "x": {
+          "field": "decade",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "note"
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "shared"
+    }
+  }
+}

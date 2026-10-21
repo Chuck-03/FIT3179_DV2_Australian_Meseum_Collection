@@ -1,0 +1,18 @@
+id,parent,area,items
+Australian Museum,,,
+Natural sciences,Australian Museum,Natural sciences,
+Cultural collections,Australian Museum,Cultural collections,
+Entomology (insects),Natural sciences,Natural sciences,4000000
+Malacology (molluscs),Natural sciences,Natural sciences,4000000
+Marine invertebrates,Natural sciences,Natural sciences,1600000
+Ichthyology (fish),Natural sciences,Natural sciences,1600000
+Arachnology (spiders),Natural sciences,Natural sciences,635000
+Herpetology (reptiles & frogs),Natural sciences,Natural sciences,170000
+Palaeontology (fossils),Natural sciences,Natural sciences,167000
+Ornithology (birds),Natural sciences,Natural sciences,90000
+Mineralogy,Natural sciences,Natural sciences,76000
+Mammalogy,Natural sciences,Natural sciences,47000
+First Nations archaeology,Cultural collections,Cultural collections,800000
+Pasifika cultural objects,Cultural collections,Cultural collections,67000
+First Nations cultural objects,Cultural collections,Cultural collections,22850
+World cultures,Cultural collections,Cultural collections,15000

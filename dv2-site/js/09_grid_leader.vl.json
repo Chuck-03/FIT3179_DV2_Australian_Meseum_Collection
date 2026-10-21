@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Categorical grid map: which museum holds the most specimens from each 1° × 1° cell. Click a museum in the legend to highlight its territory.",
+  "width": 430,
+  "height": 360,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#efe9da",
+        "stroke": null
+      }
+    },
+    {
+      "data": {
+        "url": "data/grid.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.records",
+          "as": "records"
+        },
+        {
+          "calculate": "datum.properties.leader",
+          "as": "Leading museum"
+        },
+        {
+          "calculate": "datum.properties.lat",
+          "as": "lat"
+        },
+        {
+          "calculate": "datum.properties.lon",
+          "as": "lon"
+        }
+      ],
+      "params": [
+        {
+          "name": "leaderSel",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Leading museum"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#fffdf8",
+        "strokeWidth": 0.3
+      },
+      "encoding": {
+        "color": {
+          "field": "Leading museum",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "AM",
+              "MV",
+              "QM",
+              "WAM",
+              "SAM",
+              "TMAG",
+              "MAGNT",
+              "QVMAG"
+            ],
+            "range": [
+              "#2a78d6",
+              "#eb6834",
+              "#1baf7a",
+              "#eda100",
+              "#e87ba4",
+              "#008300",
+              "#6250d6",
+              "#e34948"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 4,
+            "symbolType": "square",
+            "symbolSize": 160,
+            "title": "Leading museum (click to highlight)",
+            "titleLimit": 400
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "leaderSel",
+            "value": 1
+          },
+          "value": 0.12
+        },
+        "tooltip": [
+          {
+            "field": "Leading museum",
+            "title": "Holds the most"
+          },
+          {
+            "field": "records",
+            "title": "All records in cell",
+            "format": ","
+          },
+          {
+            "field": "lat",
+            "title": "Latitude (°)"
+          },
+          {
+            "field": "lon",
+            "title": "Longitude (°)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#2e2b24",
+        "strokeWidth": 0.9,
+        "strokeOpacity": 0.85
+      }
+    }
+  ]
+}

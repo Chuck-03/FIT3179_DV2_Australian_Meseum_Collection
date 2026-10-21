@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map: where a chosen museum's specimens were collected, as a share of its records with a known Australian state.",
+  "width": 390,
+  "height": 340,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "params": [
+    {
+      "name": "museum",
+      "value": "Australian Museum",
+      "bind": {
+        "input": "select",
+        "name": "Choose a museum  ",
+        "options": [
+          "Australian Museum",
+          "Museums Victoria",
+          "Queensland Museum",
+          "Western Australian Museum",
+          "South Australian Museum",
+          "Tasmanian Museum and Art Gallery",
+          "Museum and Art Gallery of the Northern Territory",
+          "Queen Victoria Museum and Art Gallery"
+        ]
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "data/states.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "records": "number",
+            "share": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.museum == museum"
+        },
+        {
+          "calculate": "datum.share < 1 ? 'under 1%' : datum.share < 5 ? '1–5%' : datum.share < 10 ? '5–10%' : datum.share < 25 ? '10–25%' : datum.share < 50 ? '25–50%' : '50% +'",
+          "as": "band"
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "data/aus_states.topojson",
+              "format": {
+                "type": "topojson",
+                "feature": "states"
+              }
+            },
+            "key": "properties.STATE_NAME"
+          },
+          "as": "geo"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#fffdf8",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "band",
+          "type": "ordinal",
+          "title": [
+            "Share of",
+            "records"
+          ],
+          "scale": {
+            "domain": [
+              "under 1%",
+              "1–5%",
+              "5–10%",
+              "10–25%",
+              "25–50%",
+              "50% +"
+            ],
+            "range": [
+              "#f1ede3",
+              "#cde2fb",
+              "#86b6ef",
+              "#3987e5",
+              "#1c5cab",
+              "#0d366b"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "symbolType": "square",
+            "symbolSize": 170,
+            "title": [
+              "Share of",
+              "records"
+            ],
+            "titleLimit": 400
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "Collected in"
+          },
+          {
+            "field": "records",
+            "title": "Records",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "title": "Share of records (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/museums.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "founded": "number",
+            "collection_size": "number",
+            "ala_records": "number",
+            "pct_digitised": "number",
+            "type_specimens": "number",
+            "holotypes": "number",
+            "other_types": "number",
+            "records_with_images": "number",
+            "pct_with_images": "number",
+            "home_records": "number",
+            "away_records": "number",
+            "located_records": "number",
+            "pct_home": "number",
+            "pct_away": "number",
+            "undated_records": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.museum == museum"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "shape": "diamond",
+        "size": 140,
+        "filled": true,
+        "color": "#e34948",
+        "stroke": "#fffdf8",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "city",
+            "title": "Located in"
+          }
+        ]
+      }
+    }
+  ]
+}

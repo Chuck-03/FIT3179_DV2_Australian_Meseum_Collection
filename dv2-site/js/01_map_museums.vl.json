@@ -1,0 +1,452 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Proportional symbol map: where Australia's state museums are and how big their collections are.",
+  "width": 390,
+  "height": 340,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e9e3d3",
+        "stroke": "#fffdf8",
+        "strokeWidth": 1.2
+      }
+    },
+    {
+      "data": {
+        "url": "data/museums.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "founded": "number",
+            "collection_size": "number",
+            "ala_records": "number",
+            "pct_digitised": "number",
+            "type_specimens": "number",
+            "holotypes": "number",
+            "other_types": "number",
+            "records_with_images": "number",
+            "pct_with_images": "number",
+            "home_records": "number",
+            "away_records": "number",
+            "located_records": "number",
+            "pct_home": "number",
+            "pct_away": "number",
+            "undated_records": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.collection_size > 0"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.78,
+        "stroke": "#fffdf8",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "collection_size",
+          "type": "quantitative",
+          "title": [
+            "Objects &",
+            "specimens held"
+          ],
+          "scale": {
+            "range": [
+              60,
+              3600
+            ]
+          },
+          "legend": {
+            "format": ".2s",
+            "values": [
+              1000000,
+              5000000,
+              15000000
+            ],
+            "symbolFillColor": "#b9b2a1",
+            "symbolStrokeWidth": 0,
+            "orient": "right",
+            "titleLimit": 120
+          }
+        },
+        "color": {
+          "field": "short",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "AM",
+              "MV",
+              "QM",
+              "WAM",
+              "SAM",
+              "TMAG",
+              "MAGNT",
+              "QVMAG"
+            ],
+            "range": [
+              "#2a78d6",
+              "#eb6834",
+              "#1baf7a",
+              "#eda100",
+              "#e87ba4",
+              "#008300",
+              "#6250d6",
+              "#e34948"
+            ]
+          }
+        },
+        "order": {
+          "field": "collection_size",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "city",
+            "title": "City"
+          },
+          {
+            "field": "founded",
+            "title": "Founded"
+          },
+          {
+            "field": "size_label",
+            "title": "Collection"
+          },
+          {
+            "field": "ala_records",
+            "title": "Specimen records online",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/museums.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "founded": "number",
+            "collection_size": "number",
+            "ala_records": "number",
+            "pct_digitised": "number",
+            "type_specimens": "number",
+            "holotypes": "number",
+            "other_types": "number",
+            "records_with_images": "number",
+            "pct_with_images": "number",
+            "home_records": "number",
+            "away_records": "number",
+            "located_records": "number",
+            "pct_home": "number",
+            "pct_away": "number",
+            "undated_records": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "!(datum.collection_size > 0)"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "shape": "circle",
+        "size": 70,
+        "strokeWidth": 2,
+        "strokeDash": [
+          2,
+          2
+        ],
+        "color": "#6250d6"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "museum",
+            "title": "Museum"
+          },
+          {
+            "field": "city",
+            "title": "City"
+          },
+          {
+            "field": "founded",
+            "title": "Opened"
+          },
+          {
+            "field": "size_label",
+            "title": "Collection"
+          },
+          {
+            "field": "ala_records",
+            "title": "Specimen records online",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/museums.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "founded": "number",
+            "collection_size": "number",
+            "ala_records": "number",
+            "pct_digitised": "number",
+            "type_specimens": "number",
+            "holotypes": "number",
+            "other_types": "number",
+            "records_with_images": "number",
+            "pct_with_images": "number",
+            "home_records": "number",
+            "away_records": "number",
+            "located_records": "number",
+            "pct_home": "number",
+            "pct_away": "number",
+            "undated_records": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "indexof(['WAM','SAM','MAGNT'], datum.short) >= 0"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#3b382f"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "city"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/museums.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "founded": "number",
+            "collection_size": "number",
+            "ala_records": "number",
+            "pct_digitised": "number",
+            "type_specimens": "number",
+            "holotypes": "number",
+            "other_types": "number",
+            "records_with_images": "number",
+            "pct_with_images": "number",
+            "home_records": "number",
+            "away_records": "number",
+            "located_records": "number",
+            "pct_home": "number",
+            "pct_away": "number",
+            "undated_records": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "indexof(['AM','MV','QM'], datum.short) >= 0"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 36,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#3b382f"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "city"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/museums.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "founded": "number",
+            "collection_size": "number",
+            "ala_records": "number",
+            "pct_digitised": "number",
+            "type_specimens": "number",
+            "holotypes": "number",
+            "other_types": "number",
+            "records_with_images": "number",
+            "pct_with_images": "number",
+            "home_records": "number",
+            "away_records": "number",
+            "located_records": "number",
+            "pct_home": "number",
+            "pct_away": "number",
+            "undated_records": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.short == 'QVMAG'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "dy": -4,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#3b382f"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "city"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/museums.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number",
+            "founded": "number",
+            "collection_size": "number",
+            "ala_records": "number",
+            "pct_digitised": "number",
+            "type_specimens": "number",
+            "holotypes": "number",
+            "other_types": "number",
+            "records_with_images": "number",
+            "pct_with_images": "number",
+            "home_records": "number",
+            "away_records": "number",
+            "located_records": "number",
+            "pct_home": "number",
+            "pct_away": "number",
+            "undated_records": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.short == 'TMAG'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "dy": 6,
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#3b382f"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "city"
+        }
+      }
+    }
+  ]
+}

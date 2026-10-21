@@ -1,0 +1,65 @@
+museum,short,state,records,share
+Australian Museum,AM,New South Wales,787546,55.26
+Australian Museum,AM,Victoria,42083,2.95
+Australian Museum,AM,Queensland,337157,23.66
+Australian Museum,AM,Western Australia,105379,7.39
+Australian Museum,AM,South Australia,36344,2.55
+Australian Museum,AM,Tasmania,54388,3.82
+Australian Museum,AM,Northern Territory,54432,3.82
+Australian Museum,AM,Australian Capital Territory,7881,0.55
+Museums Victoria,MV,New South Wales,90915,9.17
+Museums Victoria,MV,Victoria,532364,53.67
+Museums Victoria,MV,Queensland,135045,13.61
+Museums Victoria,MV,Western Australia,88919,8.96
+Museums Victoria,MV,South Australia,43975,4.43
+Museums Victoria,MV,Tasmania,64563,6.51
+Museums Victoria,MV,Northern Territory,33511,3.38
+Museums Victoria,MV,Australian Capital Territory,2655,0.27
+Queensland Museum,QM,New South Wales,38831,5.2
+Queensland Museum,QM,Victoria,9001,1.2
+Queensland Museum,QM,Queensland,646172,86.49
+Queensland Museum,QM,Western Australia,22696,3.04
+Queensland Museum,QM,South Australia,5240,0.7
+Queensland Museum,QM,Tasmania,10518,1.41
+Queensland Museum,QM,Northern Territory,13878,1.86
+Queensland Museum,QM,Australian Capital Territory,731,0.1
+Western Australian Museum,WAM,New South Wales,5804,1.06
+Western Australian Museum,WAM,Victoria,3241,0.59
+Western Australian Museum,WAM,Queensland,7991,1.45
+Western Australian Museum,WAM,Western Australia,517833,94.27
+Western Australian Museum,WAM,South Australia,5172,0.94
+Western Australian Museum,WAM,Tasmania,1704,0.31
+Western Australian Museum,WAM,Northern Territory,7249,1.32
+Western Australian Museum,WAM,Australian Capital Territory,335,0.06
+South Australian Museum,SAM,New South Wales,31016,6.26
+South Australian Museum,SAM,Victoria,21452,4.33
+South Australian Museum,SAM,Queensland,51954,10.49
+South Australian Museum,SAM,Western Australia,41626,8.41
+South Australian Museum,SAM,South Australia,304911,61.58
+South Australian Museum,SAM,Tasmania,11243,2.27
+South Australian Museum,SAM,Northern Territory,31875,6.44
+South Australian Museum,SAM,Australian Capital Territory,1029,0.21
+Tasmanian Museum and Art Gallery,TMAG,New South Wales,11416,2.21
+Tasmanian Museum and Art Gallery,TMAG,Victoria,10946,2.11
+Tasmanian Museum and Art Gallery,TMAG,Queensland,6395,1.24
+Tasmanian Museum and Art Gallery,TMAG,Western Australia,7767,1.5
+Tasmanian Museum and Art Gallery,TMAG,South Australia,7923,1.53
+Tasmanian Museum and Art Gallery,TMAG,Tasmania,470991,90.99
+Tasmanian Museum and Art Gallery,TMAG,Northern Territory,1420,0.27
+Tasmanian Museum and Art Gallery,TMAG,Australian Capital Territory,771,0.15
+Museum and Art Gallery of the Northern Territory,MAGNT,New South Wales,5178,2.42
+Museum and Art Gallery of the Northern Territory,MAGNT,Victoria,1327,0.62
+Museum and Art Gallery of the Northern Territory,MAGNT,Queensland,27718,12.98
+Museum and Art Gallery of the Northern Territory,MAGNT,Western Australia,24204,11.33
+Museum and Art Gallery of the Northern Territory,MAGNT,South Australia,2794,1.31
+Museum and Art Gallery of the Northern Territory,MAGNT,Tasmania,1803,0.84
+Museum and Art Gallery of the Northern Territory,MAGNT,Northern Territory,150388,70.42
+Museum and Art Gallery of the Northern Territory,MAGNT,Australian Capital Territory,138,0.06
+Queen Victoria Museum and Art Gallery,QVMAG,New South Wales,2240,1.52
+Queen Victoria Museum and Art Gallery,QVMAG,Victoria,2114,1.44
+Queen Victoria Museum and Art Gallery,QVMAG,Queensland,5591,3.8
+Queen Victoria Museum and Art Gallery,QVMAG,Western Australia,582,0.4
+Queen Victoria Museum and Art Gallery,QVMAG,South Australia,646,0.44
+Queen Victoria Museum and Art Gallery,QVMAG,Tasmania,134602,91.52
+Queen Victoria Museum and Art Gallery,QVMAG,Northern Territory,277,0.19
+Queen Victoria Museum and Art Gallery,QVMAG,Australian Capital Territory,1016,0.69
